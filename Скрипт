@@ -64,7 +64,7 @@ dfmat_data_tokens=dfmat_data_tokens[raw.sum!=0,]
 #работает 8-10 часов 
 result <- FindTopicsNumber(
   dfmat_data_tokens,
-  topics = seq(from = 20, to = 35, by = 1),
+  topics = seq(from = 20, to = 100, by = 1),
   metrics = c("Griffiths2004", "CaoJuan2009", "Arun2010", "Deveaud2014"),
   method = "Gibbs",
   control = list(seed = 77),
